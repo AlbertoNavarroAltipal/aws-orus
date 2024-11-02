@@ -3,14 +3,17 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm install -g pnpm
+        - pnpm install
     build:
       commands:
-        - npm run build
+        - pnpm run build
   artifacts:
+    # Ubicación donde se generan los archivos estáticos
     baseDirectory: .next
     files:
       - '**/*'
   cache:
     paths:
       - node_modules/**/*
+      - .next/cache/**/*
