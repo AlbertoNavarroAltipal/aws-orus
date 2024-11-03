@@ -250,7 +250,7 @@ const Login = ({ mode }: { mode: Mode }) => {
             sx={{ '& .MuiButton-startIcon': { marginInlineEnd: 3 } }}
             onClick={() => signIn('google')}
           >
-            Sign in with Google
+            Iniciar con Google
           </Button>
         </div>
       </div>
